@@ -77,7 +77,7 @@ userRoutes.post("/forgot", async(req, res)=>{
                 subject:"Reset password",
                 html: `<div><p><b>Hi,</b>
                 <h3>We have sent a account activation link. please click on below link to activate your account. This link will be expired after 30 minutes.</h3>
-                <a href=http://localhost:3000/${existingUser._id}/${token} target=_blank>click me</a></div>`
+                <a href=https://dall-e-backend-3wtv.onrender.com/${existingUser._id}/${token} target=_blank>click me</a></div>`
             }
             tranport.sendMail(mailoption, (error, info)=>{
                 if(error){
